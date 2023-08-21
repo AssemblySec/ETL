@@ -4,10 +4,10 @@ from bs4 import BeautifulSoup
 import re
 
 # Le contenu HTML que vous avez fourni
-html_content = """
+html_content1 = """
 ... [votre contenu HTML ici] ...
 """
-
+html_content = requests.get(html_content1)
 # Créer un objet BeautifulSoup à partir du contenu HTML
 soup = BeautifulSoup(html_content, 'html.parser')
 
